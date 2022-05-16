@@ -1,5 +1,5 @@
-import { sum, minus, product } from "./calc";
+import React from "react";
+import ReactDOM from "react-dom";
+import { App } from "./App";
 
-console.log(sum);
-console.log(minus);
-console.log(product);
+ReactDOM.render(<App />, document.getElementById("root"));
