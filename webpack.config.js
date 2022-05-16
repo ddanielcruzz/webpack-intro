@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   mode: "production",
   module: {
@@ -18,6 +20,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Custom Template",
+      template: "./src/index.html",
+    }),
+  ],
   resolve: {
     extensions: [".js", ".jsx"],
   },
